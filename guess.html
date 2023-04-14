@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess</title>
+    <link rel="stylesheet" type="text/css" href="guess.css">  
+</head>
+<body>
+    <div id="intro" class="cintro">
+        
+       <marquee direction="up" style="text-align: center;"> <span class="text">Guess the number</span></marquee>
+        <span  class="lev">Choose a level:</span><br>
+     <button onclick="game(1)" class="button" class="shake">Level 1</button><br>
+        <button onclick="game(2)" class="button">Level 2</button><br>
+        <button onclick="game(2)" class="button">Level 3</button>
+    </div>
+
+    <div id="game" class="cgame">
+        <span class="lev">Guess a number from</span>
+        <p id="range" class="lev"></p>
+        <p id="lives" class="lev">&hearts;  &hearts;  &hearts;</p>
+        <input type="text" id="guessedAns" >
+        <button onclick="guessNumber()" id="guessButton" class="button">Guess</button><br>
+        <button onclick="newGame()" id="restartButton" class="button">Restart</button>
+        
+        <p id="resultPara" class="lev"></p>
+        <p id="points" class="lev"></p>
+        <button onclick="newGame()" id="newGameButton" class="button">New Game</button><br>
+        <button onclick="nextLevel()" id="nextLevelButton" class="button">Home</button>
+          
+</div>
+   
+       
+    <script src="guess.js"></script>
+</body>
+</html>
